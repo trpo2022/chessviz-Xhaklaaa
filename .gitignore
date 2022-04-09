@@ -1,5 +1,9 @@
-*.o
-.main.c.swp
-main.c~
-#main.c#
-main
+# no *.o or *.a files
+*.[oa]
+# no temporary files
+*~
+*swp
+# no *.txt files
+*.txt
+# but track input.txt
+! input.txt

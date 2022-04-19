@@ -1,9 +1,9 @@
 #include <lib/chessviz.h>
 
-extern int w_pass; 
-extern int w_x;     
+extern int w_pass;
+extern int w_x;
 extern int b_pass;
-extern int b_x;    
+extern int b_x;
 
 void Create(char board[8][8])
 {
@@ -239,4 +239,3 @@ int WinB(char board[8][8], char w[7], char b[7], int n)
     }
     return 0;
 }
-

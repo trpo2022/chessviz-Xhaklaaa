@@ -365,7 +365,7 @@ void BlackPawn(char board[8][8], char b[7])
         y1 = ParseY(b[1]);
         x2 = ParseX(b[3]);
         y2 = ParseY(b[4]);
-      
+
     } else {
         flag = 1;
     }
@@ -924,4 +924,3 @@ int WinB(char board[8][8], char w[7], char b[7], int n)
     }
     return 0;
 }
-

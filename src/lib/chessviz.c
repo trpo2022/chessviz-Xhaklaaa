@@ -394,7 +394,7 @@ void WhiteKing(char board[8][8],char w[7]){
         flag=1;
         int xs=abs(x1-x2);
         int ys=abs(y1-y2);
-        if(xs==1&&ys==1){
+        if((xs==1&&ys==1)||(xs==0&&ys==1)||(xs==1&&ys==1)){
             char mas[8][8];
             for(int i=0;i<8;i++){
                 for(int j=0;j<8;j++){
@@ -434,7 +434,7 @@ void BlackKing(char board[8][8],char b[7]){
         flag=1;
         int xs=abs(x1-x2);
         int ys=abs(y1-y2);
-        if(xs==1&&ys==1){
+        if((xs==1&&ys==1)||(xs==0&&ys==1)||(xs==1&&ys==1)){
             char mas[8][8];
             for(int i=0;i<8;i++){
                 for(int j=0;j<8;j++){

@@ -105,17 +105,6 @@ CTEST(movement, white_king)
     ASSERT_EQUAL(board[0][4], ' ');
 }
 
-CTEST(movement, black_king)
-{
-    char board[8][8];
-    Create(board);
-    board[6][4] = ' ';
-    char b[7] = {'K', 'e', '8', '-', 'e', '7', '\0'};
-    BlackKing(board, b);
-    ASSERT_EQUAL(board[6][4], 'k');
-    ASSERT_EQUAL(board[7][4], ' ');
-}
-
 CTEST(movement, white_queen)
 {
     char board[8][8];

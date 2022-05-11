@@ -7,4 +7,12 @@ obj/src/main/*.o
 obj/src/main/*.a
 obj/src/main/*.d
 
+obj/test/*.o
+obj/test/*.a
+obj/test/*.d
+
+
+
 bin/main
+bin/test
+

@@ -365,7 +365,7 @@ void BlackPawn(char board[8][8], char b[7])
         y1 = ParseY(b[1]);
         x2 = ParseX(b[3]);
         y2 = ParseY(b[4]);
-        // printf("\n Piece: %c on %d %d\n",board[y1][x1],y1,x1);
+      
     } else {
         flag = 1;
     }
@@ -924,76 +924,4 @@ int WinB(char board[8][8], char w[7], char b[7], int n)
     }
     return 0;
 }
-case 'B':
-break;
-case 'N':
-break;
-case 'R':
-break;
-case 'K':
-break;
-default:
-if (w[0] >= 'a' && w[0] <= 'h') {
-    WhitePawn(board, w);
 
-} else {
-    Error();
-    break;
-}
-}
-}
-
-void Black(char board[8][8], char b[7])
-{
-    switch (b[0]) {
-    case 'q':
-        break;
-    case 'b':
-        if (b[5] == '\0') {
-            BlackPawn(board, b);
-        }
-        break;
-    case 'n':
-        break;
-    case 'r':
-        break;
-    case 'k':
-        break;
-    default:
-        if (b[0] >= 'a' && b[0] <= 'h') {
-            BlackPawn(board, b);
-        } else {
-            Error();
-            break;
-        }
-    }
-}
-
-int WinW(char board[8][8], char w[7], int n)
-{
-    for (int i = 0; i < 7; i++) {
-        if (w[i] == '#') {
-            printf("\n%d. %s\n", n, w);
-            White(board, w);
-            w_pass = 0;
-            printf("\n White wins \n");
-            return 1;
-        }
-    }
-    return 0;
-}
-int WinB(char board[8][8], char w[7], char b[7], int n)
-{
-    for (int i = 0; i < 7; i++) {
-        if (b[i] == '#') {
-            printf("\n%d. %s %s \n", n, w, b);
-            White(board, w);
-            w_pass = 0;
-            Black(board, b);
-            b_pass = 0;
-            printf("\n Black wins \n");
-            return 1;
-        }
-    }
-    return 0;
-}
